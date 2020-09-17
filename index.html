@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW4</title>
+    <link rel="stylesheet" href="style.css">
+    </style>
+</head>
+
+<body>
+    <div class="content-container">
+        <form class="form">
+            <button id="clear-left" class="btn btn--clear" onclick="clearLeftForm()">Clear</button>
+            <textarea id="inputText" class="text-container"></textarea>
+        </form>
+        <button id="convert-btn" class="btn" onclick="convertText()">Convert</button>
+        <div class="form">
+            <div class="option-container">
+                <button id="clear-right" class="btn btn--clear" onclick="clearRightForm()">Clear</button>
+                <select class="color-choice" onchange="chooseColor()">
+                    <option value="black">Black</option>
+                    <option value="green">Green</option>
+                    <option value="red">Red</option>
+                </select>
+            </div>
+            <div id="outputText" class="text-container"></div>
+        </div>
+    </div>
+
+    <script src="homework_4.js"></script>
+</body>
+
+</html>
